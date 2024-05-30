@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched Image Info</title>
+</head>
+<body>
+    <h1>Matched Image Information</h1>
+    {% if matched_image_info %}
+        <p>Matched Image URL: {{ matched_image_info.image_url }}</p>
+        <p>Similarity Score: {{ matched_image_info.similarity_score }}</p>
+        <!-- You can display other information as needed -->
+    {% else %}
+        <p>No matching image found.</p>
+    {% endif %}
+</body>
+</html>
